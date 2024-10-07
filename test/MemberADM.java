@@ -26,13 +26,13 @@ public class MemberADM {
 	}
 	private void init() {
 		try {
+			// 한번만 하면 댐.
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			System.out.println("오라클 드라이버 로드 성공");
 			
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
-	
 	}
 	
 	private void insert() {
@@ -77,4 +77,3 @@ public class MemberADM {
 		}
 	}
 }
-
